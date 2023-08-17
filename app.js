@@ -27,7 +27,9 @@ app.use( "/users", userRouter );
 app.use( "/task", taskRouter );
 
 app.get( "/", ( req, res ) => {
-    res.send( "Working Fine" )
+    res.send( `Welcome to NOTE API.  
+    This API is developed by - Atul Kumar Gupta.  
+    Date : ${ new Date( Date.now() ) }` );
 } );
 
 // Using Error Middleware
